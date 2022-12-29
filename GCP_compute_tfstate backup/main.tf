@@ -1,12 +1,3 @@
-#terraform {
-#  backend "gcs" {
-#    bucket = "ajeyjaiswar"
-#    prefix = "terraform/tfstate"
-#    #credentials = file("C:/Users/ajay.jaiswar/Desktop/Restricted/Learning/Terraform Trainings/GCP_compute_tfstate backup/credential.json")
-#  }
-#}
-
-
 resource "google_compute_instance" "vm_instance" {
     name = "webserver"
     machine_type = "e2-medium"
